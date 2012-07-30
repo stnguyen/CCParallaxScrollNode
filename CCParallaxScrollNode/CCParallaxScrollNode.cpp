@@ -5,6 +5,8 @@
 //  Created by Jason Marziani on 3/26/12.
 //  Copyright (c) 2012 Little Wins LLC. All rights reserved.
 //
+//  Made compatible with Cocos2d-x 2.x by Stefan Nguyen on 7/30/12.
+//
 
 #include "CCParallaxScrollNode.h"
 

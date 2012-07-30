@@ -1,4 +1,4 @@
-www/customize.cssrallax Scrolling for Cocos2d-X 2.x
+## Parallax Scrolling for Cocos2d-X 2.x
 
 This code is 100% based on the [CCParallaxScrollingNode project for
 cocos2d-iphone](https://github.com/aramkocharyan/cocos2d).
@@ -6,6 +6,8 @@ cocos2d-iphone](https://github.com/aramkocharyan/cocos2d).
 [Jason Marziani](https://github.com/jasonmarziani/CCParallaxScrollNode)
 ported it to Cocos2d-X, but the project is not compatible with Cocos2d-X
 2.x, so I forked and modified.
+
+Tested with Cocos2d-X 2.0.1
 
 ------------------------------------------------------
 
