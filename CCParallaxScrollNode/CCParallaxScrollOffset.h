@@ -20,7 +20,7 @@ class CCParallaxScrollOffset : public cocos2d::CCLayer
 {
 public:
 	virtual bool init();  
-	LAYER_CREATE_FUNC(CCParallaxScrollOffset);
+    CREATE_FUNC(CCParallaxScrollOffset);
     //
     CC_SYNTHESIZE(CCPoint, scrollOffset, ScrollOffset);
     CC_SYNTHESIZE(CCPoint, origPosition, OrigPosition);
