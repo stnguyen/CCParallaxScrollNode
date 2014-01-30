@@ -20,7 +20,7 @@ class CCParallaxScrollNode : public cocos2d::CCLayer
 {
 public:
 	virtual bool init();
-	LAYER_CREATE_FUNC(CCParallaxScrollNode);
+	CREATE_FUNC(CCParallaxScrollNode);
     
     CCSpriteBatchNode batch;
     CCSize _range;
