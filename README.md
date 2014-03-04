@@ -1,21 +1,17 @@
-## Parallax Scrolling for Cocos2d-X 2.x
+## Parallax Scrolling for Cocos2d-X 3.x
 
 This code is 100% based on the [CCParallaxScrollingNode project for
 cocos2d-iphone](https://github.com/aramkocharyan/cocos2d).
 
 [Jason Marziani](https://github.com/jasonmarziani/CCParallaxScrollNode)
 ported it to Cocos2d-X, but the project is not compatible with Cocos2d-X
-2.x, so I forked and modified.
+3.x, so I forked and modified.
 
-Tested with Cocos2d-X 2.0.1
+Tested with Cocos2d-X v3 beta 2
 
 ------------------------------------------------------
 
-#### To test:
-
-Run the included project in XCode 4.
-
-#### To use
+#### Usage
 
 Include the following files in your project
 
@@ -23,6 +19,18 @@ Include the following files in your project
     CCParallaxScrollNode.cpp
     CCParallaxScrollOffset.h
     CCParallaxScrollOffset.cpp
+
+Use it
+
+    Sprite *bg1 = Sprite::create("bg1-0.jpg");
+    Sprite *bg2 = Sprite::create("bg1-1.jpg");
+    Sprite *bg3 = Sprite::create("bg1-2.jpg");
+
+    mParallaxBg->addInfiniteScrollXWithZ(0, Point(1, 1), Point(0,0), bg1, bg2, bg3, NULL);
+    this->addChild(mParallaxBg);
+
+    // in update()
+    mParallaxBg->updateWithVelocity(Point(-VELOCITY_X/PTM_RATIO, 0), delta);
 
 --------------------------------------------------------
 
